@@ -22,7 +22,7 @@
 
 #image-container .media-stack img {
     max-width: 100%;
-    max-height: 65vh;
+    max-height: 70vh;
     width: auto;
     height: auto;
     display: block;
@@ -62,3 +62,7 @@
  #image-container .media-stack #overlay .dot.visible::after {
     content: ""; 
 }
+
+ #image-container #caption {
+     margin-top: .5em;
+ }
