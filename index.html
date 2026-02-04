@@ -7,6 +7,8 @@
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mouth.css">
+	<script src="https://cdn.jsdelivr.net/npm/scittle@0.7.30/dist/scittle.js" type="application/javascript"></script>
 </head>
 
 <body>
@@ -63,8 +65,17 @@
 	</nav>
 
 	<article>
-		<img id="main" src="1-8.png" />
+	  <div id="image-container">
+	    <div class="media-stack">
+	      <img id="main"  src="mouth.webp" />
+	      <div id="overlay">
+	      </div>
+	    </div>
+	  </div>
 	</article>
+
+	<!-- <script type="application/x-scittle" src="http://localhost:3435/api/mouth/almanach"></script> -->
+	<script type="application/x-scittle" src="https://lewicz.art/api/mouth/almanach"></script>
 
 	<article class="code" id="code-he" lang="he" dir="rtl" hidden>
 		<h1>

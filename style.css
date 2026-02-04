@@ -2,7 +2,7 @@ body {
     direction: rtl;
     margin: 0;
     color: rgb(145, 90, 20);
-    background-color: #f68c18;
+    /* background-color: #f68c18; */
     font-family: 'FreeMono', "Andale Mono", Consolas,
         "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 
@@ -142,11 +142,6 @@ article p {
 
 img#logo {
     width: 80%;
-    filter: invert(0);
-}
-
-img#logo:hover {
-    filter: invert(1);
 }
 
 @font-face {
