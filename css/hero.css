@@ -1,0 +1,49 @@
+/* 1. THE CONTAINER (The Context) */
+.hero-shell {
+  container-type: inline-size;
+  container-name: hero;
+  width: 100%;
+}
+
+/* 2. BASE STATE: Mobile (Stacked) */
+.hero-container {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-m);
+}
+
+/* 3. TABLET LOGIC (The "Balanced" Split) 
+   Triggered when the hero has enough room for two columns but not 
+   enough for a narrow 30% sidebar. */
+@container hero (600px < width <= 950px) {
+  .hero-container {
+    /* 50/50 or 40/60 works best for iPad/Tablet dimensions */
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+  }
+}
+
+/* 4. DESKTOP LOGIC (The "Cinematic" Split)
+   Triggered only when there is enough width to make a 30% 
+   sidebar look intentional and premium. */
+@container hero (width > 950px) {
+  .hero-container {
+    grid-template-columns: 3fr 7fr; /* Your 30/70 request */
+    grid-template-rows: 1fr;
+  }
+}
+.hero-sidebar {
+  background: var(--primary);
+  padding: var(--space-m);
+  display: grid;
+  place-items: center;
+}
+
+.hero-main {
+  background: var(--surface);
+  padding: var(--space-m);
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,29 @@
+/* 1. UTOPIA.FYI DESIGN TOKENS */
+:root {
+    /* Fluid Type Scale (Steps) */
+    --step-0: clamp(1rem, 0.95rem + 0.25cqi, 1.25rem); /* Body Text */
+    --step-2: clamp(1.5rem, 1.2rem + 1.5cqi, 2.5rem);  /* Header Text */
+
+    /* Fluid Space Scale (Utopian Pairs) */
+    --space-s-l: clamp(1rem, 0.5rem + 2.5cqi, 3rem); /* Fluid Padding */
+    --space-m: clamp(1.5rem, 1.2rem + 1.5cqi, 2.25rem); /* Fluid Margins */
+
+    /* Visual Theme */
+    --primary: #f58821;
+    --surface: #ffffff;
+    --bg: #f8fafc;
+    --text: #0f172a;
+}
+
+/* 2. CORE LAYOUT */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bandname {
+    font-family: paamon;
+}

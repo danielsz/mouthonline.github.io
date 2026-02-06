@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'paamon';
+    font-weight: 300;
+    /*(light)*/
+    font-style: normal;
+    src:
+        url('/fonts/paamon/paamon-light-aaa.woff2') format('woff2'),
+        url('/fonts/paamon/paamon-light-aaa.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'paamon';
+    font-weight: 400;
+    /*(regular)*/
+    font-style: normal;
+    src:
+        url('/fonts/paamon/paamon-regular-aaa.woff2') format('woff2'),
+        url('/fonts/paamon/paamon-regular-aaa.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'paamon';
+    font-weight: 500;
+    /*(medium)*/
+    font-style: normal;
+    src:
+        url('/fonts/paamon/paamon-medium-aaa.woff2') format('woff2'),
+        url('/fonts/paamon/paamon-medium-aaa.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'paamon';
+    font-weight: 700;
+    /*(bold)*/
+    font-style: normal;
+    src:
+        url('/fonts/paamon/paamon-medium-aaa.woff2') format('woff2'),
+        url('/fonts/paamon/paamon-medium-aaa.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'paamon';
+    font-weight: 900;
+    /*(black)*/
+    font-style: normal;
+    src:
+        url('/fonts/paamon/paamon-black-aaa.woff2') format('woff2'),
+        url('/fonts/paamon/paamon-black-aaa.woff') format('woff');
+}
+
+/* /// */
+
+@font-face {
+    font-family: 'FreeMono';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('FreeMono'),
+        url('https://fonts.cdnfonts.com/s/16387/FreeMono.woff') format('woff');
+}
