@@ -1,0 +1,125 @@
+.card-5 {
+    container-type: inline-size;
+    container-name: card5;
+}
+
+.card-5 .card-inner {
+    background: var(--surface);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e5e5e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card-5 .top-bar {
+    height: 8px;
+    background: linear-gradient(90deg, #1a1a1a 0%, #4a4a4a 100%);
+}
+
+.card-5 .card-content {
+    padding: 60px 50px;
+    display: grid;
+    gap: 50px;
+}
+
+.card-5 .logo-section {
+    display: grid;
+    gap: 25px;
+    align-items: start;
+}
+
+.card-5 .logo-container {
+    width: 200px;
+    height: 152px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.card-5 .logo-container:hover {
+    transform: scale(1.05);
+}
+
+.card-5 .logo-img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.card-5 .number {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+.card-5 .text-section {
+    display: grid;
+    gap: 20px;
+}
+
+.card-5 .band-name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+}
+
+.card-5 .meta {
+    display: grid;
+    gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e0;
+}
+
+.card-5 .meta-item {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.875rem;
+    color: #666;
+    letter-spacing: 0.05em;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+}
+
+.card-5 .meta-label {
+    color: #999;
+    font-weight: 400;
+}
+
+.card-5 .meta-value {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+@container card5 (min-width: 700px) {
+    .card-5 .card-content {
+        grid-template-columns: 200px 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .card-5 .band-name {
+        font-size: 4.5rem;
+    }
+}
+
+@container card5 (max-width: 600px) {
+    .card-5 .card-content {
+        padding: 40px 30px;
+    }
+
+    .card-5 .band-name {
+        font-size: 2.5rem;
+    }
+}
+
+

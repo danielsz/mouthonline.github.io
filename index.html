@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="css/thecode.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bandcard.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    
     <title>Mouth and Foot</title>
     <script src="https://cdn.jsdelivr.net/npm/scittle@0.7.30/dist/scittle.js" type="application/javascript"></script>
     <script type="application/x-scittle" src="https://lewicz.art/api/mouth/almanach"></script>
@@ -19,28 +25,37 @@
     <section class="hero-shell">
       <div class="hero-container">
 	<div class="hero-sidebar">
-	  <div id="bandandlogo" id="">
-	    <div lang="en" class="content-group bandname">
-	      <h2>Mouth and Foot</h2>
+          <div class="card-5">
+            <div class="card-inner">
+              <div class="top-bar"></div>
+              <div class="card-content">
+                <div class="logo-section">
+                  <div class="logo-container">
+                    <img id="logo" src="images/logo-clear.png" />	    
+                  </div>
+                  <div class="number">№ 007</div>
+                </div>
+                <div class="text-section">
+                  <div class="band-name">MOUTH AND FOOT</div>
+                  <div class="meta">
+                    <div class="meta-item">
+                      <span class="meta-label">Abum</span>
+                      <span class="meta-value">חופי קרשלטון</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">Download</span>
+                      <span class="meta-value"><a href="https://mouthandfoot.bandcamp.com/track/--2">
+			  Bandcamp
+		      </a></span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-label">Est.</span>
+                      <span class="meta-value">2025</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 	    </div>
-	    <div lang="he" class="content-group bandname">
-	      <h2>הפה והטלפיים</h2>
-	    </div>
-	    <div lang="de" class="content-group bandname">
-	      <h2>Maul und Klauen</h2>
-	    </div>
-	    <div lang="fr" class="content-group bandname">
-	      <h2>Mouth and Foot</h2>
-	    </div>
-	    <div lang="zh" class="content-group bandname">
-	      <h2>Mouth and Foot</h2>
-	    </div>
-	    <img id="logo"  src="images/logo-clear.png" />	    
-	  </div>
-	  <div id="download">
-	    <a href="https://mouthandfoot.bandcamp.com/track/--2">
-	      <p>הורדת אלבום עם קוד לרוכשי חולצה</p>
-	    </a>
 	  </div>
 	</div>
 	<div class="hero-main">
@@ -55,14 +70,13 @@
 	      </div>
 	    </div>
 	  </article>
-
 	</div>
       </div>
     </section>
 
     
     <div id="en"></div><div id="fr"></div><div id="de"></div><div id="he"></div><div id="zh"></div>
-    
+<div id="lang-nav-container">
     <nav class="lang-nav">
       <a href="#en">EN</a>
       <a href="#fr">FR</a>
@@ -70,9 +84,10 @@
       <a href="#he">HE</a>
       <a href="#zh">ZH</a>
     </nav>
-
-    
-    <main class="thecode-container">
+</div>
+  
+    <main id="thecode">    
+    <div class="thecode-container">
       <article class="card">
 	
 	<div lang="en" class="content-group">
@@ -440,6 +455,7 @@
 	</div>
 
       </article>
+      </div>
     </main>
     <footer id="main-footer">
       <nav class="social-links">

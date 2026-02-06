@@ -11,13 +11,12 @@
   min-height: 100dvh;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  gap: var(--space-m);
 }
 
 /* 3. TABLET LOGIC (The "Balanced" Split) 
    Triggered when the hero has enough room for two columns but not 
    enough for a narrow 30% sidebar. */
-@container hero (600px < width <= 950px) {
+@container hero (600px < width <= 1050px) {
   .hero-container {
     /* 50/50 or 40/60 works best for iPad/Tablet dimensions */
     grid-template-columns: 1fr 1fr; 
@@ -28,7 +27,7 @@
 /* 4. DESKTOP LOGIC (The "Cinematic" Split)
    Triggered only when there is enough width to make a 30% 
    sidebar look intentional and premium. */
-@container hero (width > 950px) {
+@container hero (width > 1050px) {
   .hero-container {
     grid-template-columns: 3fr 7fr; /* Your 30/70 request */
     grid-template-rows: 1fr;
@@ -37,8 +36,9 @@
 .hero-sidebar {
   background: var(--primary);
   padding: var(--space-m);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .hero-main {
