@@ -20,12 +20,12 @@
 .card-5 .card-content {
     padding: 60px 50px;
     display: grid;
-    gap: 50px;
+    gap: var(--space-s-l);
 }
 
 .card-5 .logo-section {
     display: grid;
-    gap: 25px;
+    gap: var(--space-s-l);
     justify-items: start;
 }
 
@@ -64,12 +64,12 @@ body:has(#he:target) .card-5 .logo-section {
 
 .card-5 .text-section {
     display: grid;
-    gap: 20px;
+    gap: var(--space-s-l);
 }
 
 .card-5 .band-name {
     font-family: var(--font-language-aware-bandname);
-    font-size: 3.5rem;
+    font-size: var(--step-2);
     font-weight: 500;
     color: #1a1a1a;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ body:has(#he:target) .card-5 .logo-section {
 
 .card-5 .meta {
     display: grid;
-    gap: 8px;
+    gap: var(--space-s-l);
     padding-top: 10px;
     border-top: 1px solid #e5e5e0;
 }
@@ -91,7 +91,7 @@ body:has(#he:target) .card-5 .logo-section {
     letter-spacing: 0.05em;
     display: grid;
     grid-template-columns: 100px 1fr;
-    gap: 20px;
+    gap: var(--space-s-l);
 }
 
 .card-5 .meta-label {
@@ -107,7 +107,7 @@ body:has(#he:target) .card-5 .logo-section {
 @container card5 (min-width: 700px) {
     .card-5 .card-content {
         grid-template-columns: 200px 1fr;
-        gap: 80px;
+        gap: var(--space-s-l);
         align-items: center;
     }
 

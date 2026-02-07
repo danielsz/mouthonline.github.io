@@ -72,7 +72,7 @@
 }
 
 /* Hide Est. and Curr. metadata on short mobile viewports */
-@container hero (height < 700px) {
+@container hero (width < 700px) {
     .hero-sidebar .meta-item:nth-last-child(-n+2) {
         display: none;
     }
