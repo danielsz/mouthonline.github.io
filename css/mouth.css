@@ -9,8 +9,11 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px;   /* Optional: adds a gap so image doesn't touch screen edges */
+    max-height: 100%;  /* Constrain to parent */
+    padding: var(--space-s-l);
+  /* Responsive padding     padding: clamp(10px, 2vmin, 20px);*/
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .media-stack {
@@ -29,7 +32,8 @@
   display: block;
   width: 100%; /* Fill the container width */
   height: auto;
-  max-height: 80vh;
+  max-height: min(80vh, 100%);  /* Constrain to parent or 80vh, whichever is smaller */
+  max-width: 100%;
   object-fit: contain;
   /* This ensures the image has a placeholder space while loading */
   aspect-ratio: attr(width) / attr(height); 

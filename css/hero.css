@@ -1,9 +1,9 @@
 /* 1. THE CONTAINER (The Context) */
 .hero-shell {
-    container-type: inline-size;
+    container-type: size;  /* Track both width AND height */
     container-name: hero;
     width: 100%;
-    min-height: 100dvh;
+    height: 100dvh;
 }
 
 .hero-sidebar { grid-area: sidebar; }
@@ -17,13 +17,15 @@
 	"sidebar"
 	"main";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr 1fr;  /* 50/50 split for full viewport hero */
+    height: 100%;
 }
 
 @container hero (600px < width <= 1050px) {
     .hero-container {
 	grid-template-areas: "sidebar main";
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
     }
     
     body:has(#he:target) .hero-container {
@@ -33,12 +35,20 @@
 
 @container hero (width > 1050px) {
     .hero-container {
-	grid-template-areas: "sidebar main"; /* Sidebar on Left */
+	grid-template-areas: "sidebar main";
 	grid-template-columns: 3fr 7fr;
+	grid-template-rows: 1fr;
     }
     body:has(#he:target) .hero-container {
-	grid-template-areas: "main sidebar"; /* Sidebar on Right */
-	grid-template-columns: 7fr 3fr;      /* Main on Left */
+	grid-template-areas: "main sidebar";
+	grid-template-columns: 7fr 3fr;
+    }
+}
+
+/* Fallback for very short viewports - allow scroll */
+@container hero (height < 400px) {
+    .hero-container {
+	grid-template-rows: auto auto;
     }
 }
 
@@ -47,7 +57,9 @@
     padding: var(--space-m);
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    overflow: auto;
+    min-height: 0;
 }
 
 .hero-main {
@@ -55,4 +67,13 @@
     padding: var(--space-m);
     display: grid;
     place-items: center;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Hide Est. and Curr. metadata on short mobile viewports */
+@container hero (height < 700px) {
+    .hero-sidebar .meta-item:nth-last-child(-n+2) {
+        display: none;
+    }
 }
