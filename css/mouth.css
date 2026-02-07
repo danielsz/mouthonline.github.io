@@ -19,11 +19,6 @@
   display: grid;
   /* 'stack' will take the size of the largest visible content */
   grid-template-areas: "stack"; 
-  
-  /* CRITICAL: Ensure the container doesn't collapse */
-  min-height: 100px; 
-  width: fit-content;
-  margin-inline: auto;
 }
 
 .media-stack img {
