@@ -3,6 +3,7 @@
     container-type: inline-size;
     container-name: hero;
     width: 100%;
+    min-height: 100dvh;
 }
 
 .hero-sidebar { grid-area: sidebar; }
@@ -12,7 +13,6 @@
 
 .hero-container {
     display: grid;
-    min-height: 100dvh;
     grid-template-areas: 
 	"sidebar"
 	"main";
