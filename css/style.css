@@ -30,7 +30,7 @@
     --bg: #f8fafc;
     --text: #0f172a;
 
-    --font-bandname: 'Archivo Black', sans-serif;
+    --font-bandname: paamon, serif;
     --font-bandname-hebrew: paamon, serif;
     --font-language-aware-bandname: var(--font-bandname);
 }
