@@ -1,49 +1,58 @@
 /* 1. THE CONTAINER (The Context) */
 .hero-shell {
-  container-type: inline-size;
-  container-name: hero;
-  width: 100%;
+    container-type: inline-size;
+    container-name: hero;
+    width: 100%;
 }
+
+.hero-sidebar { grid-area: sidebar; }
+.hero-main    { grid-area: main; }
 
 /* 2. BASE STATE: Mobile (Stacked) */
+
 .hero-container {
-  display: grid;
-  min-height: 100dvh;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-areas: 
+	"sidebar"
+	"main";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
 }
 
-/* 3. TABLET LOGIC (The "Balanced" Split) 
-   Triggered when the hero has enough room for two columns but not 
-   enough for a narrow 30% sidebar. */
 @container hero (600px < width <= 1050px) {
-  .hero-container {
-    /* 50/50 or 40/60 works best for iPad/Tablet dimensions */
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr;
-  }
+    .hero-container {
+	grid-template-areas: "sidebar main";
+	grid-template-columns: 1fr 1fr;
+    }
+    
+    body:has(#he:target) .hero-container {
+	grid-template-areas: "main sidebar";
+    }
 }
 
-/* 4. DESKTOP LOGIC (The "Cinematic" Split)
-   Triggered only when there is enough width to make a 30% 
-   sidebar look intentional and premium. */
 @container hero (width > 1050px) {
-  .hero-container {
-    grid-template-columns: 3fr 7fr; /* Your 30/70 request */
-    grid-template-rows: 1fr;
-  }
+    .hero-container {
+	grid-template-areas: "sidebar main"; /* Sidebar on Left */
+	grid-template-columns: 3fr 7fr;
+    }
+    body:has(#he:target) .hero-container {
+	grid-template-areas: "main sidebar"; /* Sidebar on Right */
+	grid-template-columns: 7fr 3fr;      /* Main on Left */
+    }
 }
+
 .hero-sidebar {
-  background: var(--primary);
-  padding: var(--space-m);
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
+    background: var(--primary);
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 
 .hero-main {
-  background: var(--surface);
-  padding: var(--space-m);
-  display: grid;
-  place-items: center;
+    background: var(--surface);
+    padding: var(--space-m);
+    display: grid;
+    place-items: center;
 }
