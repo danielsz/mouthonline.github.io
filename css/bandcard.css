@@ -70,7 +70,7 @@ body:has(#he:target) .card-5 .logo-section {
 .card-5 .band-name {
     font-family: var(--font-language-aware-bandname);
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 500;
     color: #1a1a1a;
     text-transform: uppercase;
     letter-spacing: -0.02em;
