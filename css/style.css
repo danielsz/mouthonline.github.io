@@ -11,12 +11,18 @@
     --step-5: clamp(2.7994rem, 2.384rem + 1.8461cqi, 3.8147rem);
 
     /* Fluid Space Scale (Utopian Pairs) */
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0cqi, 0.3125rem);
+    --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136cqi, 0.625rem);
     --space-xs: clamp(0.875rem, 0.8494rem + 0.1136cqi, 0.9375rem);
     --space-s: clamp(1.125rem, 1.0739rem + 0.2273cqi, 1.25rem);
     --space-m: clamp(1.6875rem, 1.6108rem + 0.3409cqi, 1.875rem);
     --space-l: clamp(2.25rem, 2.1477rem + 0.4545cqi, 2.5rem);
 
     --space-s-l: clamp(1.125rem, 0.5625rem + 2.5cqi, 2.5rem);
+    --space-m-l: clamp(1.6875rem, 1.3551rem + 1.4773cqi, 2.5rem);
+    --space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273cqi, 3.75rem);
+    --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545cqi, 5rem);
+    --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545cqi, 7.5rem);
 
     /* Visual Theme */
     --primary: #f58821;
