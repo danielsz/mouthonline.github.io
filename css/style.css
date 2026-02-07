@@ -1,8 +1,14 @@
 /* 1. UTOPIA.FYI DESIGN TOKENS */
 :root {
     /* Fluid Type Scale (Steps) */
-    --step-0: clamp(1rem, 0.95rem + 0.25cqi, 1.25rem); /* Body Text */
-    --step-2: clamp(1.5rem, 1.2rem + 1.5cqi, 2.5rem);  /* Header Text */
+    --step--2: clamp(0.7813rem, 0.7736rem + 0.0341cqi, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9119rem + 0.1136cqi, 1rem);
+    --step-0: clamp(1.125rem, 1.0739rem + 0.2273cqi, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2631rem + 0.3864cqi, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.4837rem + 0.6057cqi, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.7405rem + 0.9044cqi, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0387rem + 1.3072cqi, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.384rem + 1.8461cqi, 3.8147rem);
 
     /* Fluid Space Scale (Utopian Pairs) */
     --space-xs: clamp(0.875rem, 0.8494rem + 0.1136cqi, 0.9375rem);
