@@ -104,18 +104,26 @@ body:has(#he:target) .card-5 .logo-section {
     font-weight: 600;
 }
 
-@container card5 (min-width: 43.75rem) {
-            .card-5 .card-content {
-                grid-template-columns: clamp(12.5rem, calc(11.48rem + 5.11vw), 15rem) 1fr;
-                gap: var(--space-xl-2xl);
-                align-items: center;
-            }
-
-            .card-5 .band-name {
-                font-size: var(--step-5);
-            }
+@container card5 (width < 25rem) {
+    .card-5 .logo-section {
+        display: none;
+    }
 }
 
+@container card5 (width > 1050px) {
+    .card-5 .card-content {
+        grid-template-columns: clamp(12.5rem, calc(11.48rem + 5.11vw), 15rem) 1fr;
+        gap: var(--space-xl-2xl);
+        align-items: center;
+    }
 
+    .card-5 .band-name {
+        font-size: var(--step-5);
+    }
+}
 
-
+@container hero (height < 400px) {
+    .hero-container {
+	grid-template-rows: auto auto;
+    }
+}

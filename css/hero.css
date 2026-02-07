@@ -21,6 +21,16 @@
     height: 100%;
 }
 
+@container hero (width < 600px) {
+  .hero-container {
+    grid-template-areas:
+	"sidebar"
+	"main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+ }
+
 @container hero (600px < width <= 1050px) {
     .hero-container {
 	grid-template-areas: "sidebar main";
@@ -45,12 +55,6 @@
     }
 }
 
-/* Fallback for very short viewports - allow scroll */
-@container hero (height < 400px) {
-    .hero-container {
-	grid-template-rows: auto auto;
-    }
-}
 
 .hero-sidebar {
     background: var(--primary);
