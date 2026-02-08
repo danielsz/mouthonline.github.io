@@ -33,6 +33,10 @@
     --font-bandname: paamon, serif;
     --font-bandname-hebrew: paamon, serif;
     --font-language-aware-bandname: var(--font-bandname);
+
+    --grid-max-width: 77.50rem;
+    --grid-gutter: var(--space-s-l, clamp(1.125rem, 0.5625rem + 2.5vw, 2.5rem));
+    --grid-columns: 12;
 }
 
 * {

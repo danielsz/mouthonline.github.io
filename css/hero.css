@@ -49,12 +49,11 @@
 	grid-template-columns: 3fr 7fr;
 	grid-template-rows: 1fr;
     }
-    body:has(#he:target) .hero-container {
+    body:has(#state-he:checked) .hero-container {
 	grid-template-areas: "main sidebar";
 	grid-template-columns: 7fr 3fr;
     }
 }
-
 
 .hero-sidebar {
     background: var(--primary);

@@ -58,9 +58,12 @@ p { font-size: var(--step-0); line-height: 1.75; margin-bottom: 1.25rem; }
   display: none;
 }
 
-/* 2. State-Based Visibility */
+body:has(#state-he:checked) .u-grid { direction: rtl;}
+
 body:has(#state-en:checked) .content-group[lang="en"] { display: block; }
 body:has(#state-he:checked) .content-group[lang="he"] { display: block; }
 body:has(#state-fr:checked) .content-group[lang="fr"] { display: block; }
 body:has(#state-de:checked) .content-group[lang="de"] { display: block; }
 body:has(#state-zh:checked) .content-group[lang="zh"] { display: block; }
+
+

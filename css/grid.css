@@ -1,0 +1,36 @@
+.u-container {
+    max-width: var(--grid-max-width);
+    padding-inline: var(--grid-gutter);
+    margin-inline: auto;
+    container-type: inline-size;
+}
+
+.u-grid {
+    display: grid;
+    gap: var(--grid-gutter);
+    /* The 12-column grid exists everywhere */
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    row-gap: var(--space-l-xl);
+    padding-block: var(--space-l-xl);
+}
+
+/* Default: Elements fill all 12 columns (stacked) */
+.u-grid > * {
+    grid-column: 1 / -1;
+}
+
+@container (min-width: 60rem) {
+  /* This works for BOTH English and Hebrew automatically */
+  .summary {
+    /* Line 1 is the 'Start'. In RTL, line 1 is the far right. */
+    grid-column: 1 / span 2; 
+    align-self: start;
+    min-inline-size: var(--space-2xl-3xl);
+  }
+
+  .main-text, .thecode {
+    /* Line 4 is the 'Start' plus an offset. */
+    /* In RTL, this leaves the 'buffer' to the left of the text. */
+    grid-column: 4 / span 7;
+  }
+}

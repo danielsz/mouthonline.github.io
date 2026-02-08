@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bandcard.css">
     <link rel="stylesheet" href="css/multilingual.css">
+    <link rel="stylesheet" href="css/grid.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,10 +99,26 @@
       </nav>
     </div>
     
-    
-    <main id="thecode">    
-      <div class="thecode-container">
-	<article class="card">
+    <div class="u-container">
+      <div class="u-grid">
+	<aside class="summary">
+	  <div lang="en" class="content-group">
+	    <h2>Mouth and Foot</h2>
+	    <p>
+              The Mouth and Foot is an pop act that has released seven albums at six-year intervals since 1989 - and plans to keep going until its members turn 80. Their activity is governed by a code they set for themselves early on.
+	    </p>
+	  </div>
+	  <div lang="he" class="content-group">
+	    <h2>הפה והטלפיים</h2>
+	    <p>
+	      הרכב הפופ הפה והטלפיים הוציא שבעה אלבומים מדי שש שנים מאז
+	      1989 - וימשיך עד שחבריו יגיעו לגיל 80. הפעילות שלהם נשענת
+	      על קוד שהם ניסחו לעצמם בתחילת הדרך (ראו למטה).	    
+	    </p>
+	  </div>
+	</aside>
+
+	<article class="thecode">
 	  
 	  <div lang="en" class="content-group">
 	    <h2>The Code of the Mouth</h2>
@@ -468,8 +485,10 @@
 	  </div>
 
 	</article>
+	
       </div>
-    </main>
+    </div>
+
     <footer id="main-footer">
       <nav class="social-links">
 	<a href="https://music.apple.com/il/artist/mouth-and-foot/953446932" target="_blank" rel="noopener">Apple</a>
@@ -491,22 +510,22 @@
 
       // 2. INITIALIZATION: Run as soon as the DOM is ready
       window.addEventListener('DOMContentLoaded', () => {
-      const saved = localStorage.getItem(STORAGE_KEY);
+	  const saved = localStorage.getItem(STORAGE_KEY);
       const browser = navigator.language.split('-')[0];
 
-      // Priority: 1. LocalStorage, 2. Browser Language, 3. Default (English)
-      let targetLang = 'en'; 
-      if (supported.includes(saved)) {
-      targetLang = saved;
-      } else if (supported.includes(browser)) {
-      targetLang = browser;
-      }
+	  // Priority: 1. LocalStorage, 2. Browser Language, 3. Default (English)
+	  let targetLang = 'en'; 
+	  if (supported.includes(saved)) {
+	      targetLang = saved;
+	  } else if (supported.includes(browser)) {
+	      targetLang = browser;
+	  }
 
-      // Explicitly check the correct radio button
-      const input = document.getElementById(`state-${targetLang}`);
-      if (input) {
-      input.checked = true;
-      }
+	  // Explicitly check the correct radio button
+	  const input = document.getElementById(`state-${targetLang}`);
+	  if (input) {
+	      input.checked = true;
+	  }
       });
 
       // 3. AUTO-SAVE: Watch for user interactions
