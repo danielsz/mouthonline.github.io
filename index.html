@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bandcard.css">
+    <link rel="stylesheet" href="css/multilingual.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,12 @@
     <script type="application/x-scittle" src="https://lewicz.art/api/mouth/almanach"></script>
   </head>
   <body>
-
+    <input type="radio" name="site-language" id="state-en" hidden>
+    <input type="radio" name="site-language" id="state-he" checked hidden>
+    <input type="radio" name="site-language" id="state-fr" hidden>
+    <input type="radio" name="site-language" id="state-de" hidden>
+    <input type="radio" name="site-language" id="state-zh" hidden>
+    
     <section class="hero-shell">
       <div class="hero-container">
 	<div class="hero-sidebar">
@@ -82,387 +88,386 @@
       </div>
     </section>
 
+    <div class="lang-nav-container" id="">
+      <nav class="lang-nav">
+	<label for="state-en">EN</label>
+	<label for="state-fr">FR</label>
+	<label for="state-de">DE</label>
+	<label for="state-he">HE</label>
+	<label for="state-zh">ZH</label>
+      </nav>
+    </div>
     
-    <div id="en"></div><div id="fr"></div><div id="de"></div><div id="he"></div><div id="zh"></div>
-<div id="lang-nav-container">
-    <nav class="lang-nav">
-      <a href="#en">EN</a>
-      <a href="#fr">FR</a>
-      <a href="#de">DE</a>
-      <a href="#he">HE</a>
-      <a href="#zh">ZH</a>
-    </nav>
-</div>
-  
+    
     <main id="thecode">    
-    <div class="thecode-container">
-      <article class="card">
-	
-	<div lang="en" class="content-group">
-	  <h2>The Code of the Mouth</h2>
-	  <h3>1. An album every six years</h3>
-	  <p>The most important rule of all. The commitment to keep it is more
-	    important than any other aspect in the existence of the Mouth and Foot.</p>
-	  <h3>2. One cover - many colours</h3>
-	  <p>All Mouth albums have an identical cover, that includes the main Mouth
-	    image (on the front), and the secondary mouth image (in the booklet).
-	    Each album has its unique colour.</p>
-	  <h3>3. Casio is king</h3>
-	  <p>The central musical instrument of the Mouth and Foot is the Casio organ.
-	    The automatic accompaniment function of these organs is the skeleton
-	    around which most of the group&#8217;s songs are created.</p>
-	  <h3>4. The patriotic cover version</h3>
-	  <p>The last track in every Mouth album is an improvised version of a known
-	    patriotic Israeli song. The cover version is recorded in one take and
-	    with no rehearsals.</p>
-	  <h3>5. The Open Invitation</h3>
-	  <p>In each album an open invitation is sent to friends or artists admired
-	    by the Mouth, to take part in one or two tracks.</p>
-	  <h3>6. The song with the fatal meaning</h3>
-	  <p>The one before last song in each album has a fatal theme - in melody,
-	    lyrics, title or all three.</p>
-	  <h3>7. The locating title</h3>
-	  <p>The long time between albums finds the Mouth and Foot in a different
-	    place each time - geographically and mentally. It&#8217;s important for the group
-	    to note this in the titles of the albums.</p>
-	  <h3>8. The song with the previous album&#8217;s title</h3>
-	  <p>Every album includes a song which has the title of the previous album.</p>
-	  <h3>9. The Spirit of recording</h3>
-	  <p>The basic idea is to maintain a level of maximal freshness, simplicity
-	    and intuitiveness in the recorded tracks.</p>
-	  <h3>10. The record label goes bankrupt</h3>
-	  <p>Possibly the most mysterious and dark rule in the code. History shows
-	    that every record label that releases an album for the Mouth and Foot
-	    goes bankrupt before the release of the next Mouth album.</p>
-	  <h3>11. Exposure figures double</h3>
-	  <p>Sales figures show that Mouth sales double with the release of every album.</p>
-	  <h3>12. The short song</h3>
-	  <p>Each album includes a short song that contains one verse that is sang,
-	    followed by a longer instrumental part. The short song has no chorus or
-	    C part.</p>
-	  <h3>13. The secret message</h3>
-	  <p>Inside the patriotic cover version, a hidden message is sent from the
-	    Mouth and Foot to a known person in Israeli public life.</p>
-	  <h3>14. The song that directs allegations towards a member of the beautiful gender in second person</h3>
-	  <p>In each album there will be a song that is aimed directly at an imagined
-	    representative of the other gender, with a list if allegations.</p>
-	  <h3>15. The disease outbreak</h3>
-	  <p>Every Mouth Year (a year when a Mouth and Foot album is released), there
-	    is an outbreak of the Mouth and Foot disease somewhere in the world.</p>
-	</div>
+      <div class="thecode-container">
+	<article class="card">
+	  
+	  <div lang="en" class="content-group">
+	    <h2>The Code of the Mouth</h2>
+	    <h3>1. An album every six years</h3>
+	    <p>The most important rule of all. The commitment to keep it is more
+	      important than any other aspect in the existence of the Mouth and Foot.</p>
+	    <h3>2. One cover - many colours</h3>
+	    <p>All Mouth albums have an identical cover, that includes the main Mouth
+	      image (on the front), and the secondary mouth image (in the booklet).
+	      Each album has its unique colour.</p>
+	    <h3>3. Casio is king</h3>
+	    <p>The central musical instrument of the Mouth and Foot is the Casio organ.
+	      The automatic accompaniment function of these organs is the skeleton
+	      around which most of the group&#8217;s songs are created.</p>
+	    <h3>4. The patriotic cover version</h3>
+	    <p>The last track in every Mouth album is an improvised version of a known
+	      patriotic Israeli song. The cover version is recorded in one take and
+	      with no rehearsals.</p>
+	    <h3>5. The Open Invitation</h3>
+	    <p>In each album an open invitation is sent to friends or artists admired
+	      by the Mouth, to take part in one or two tracks.</p>
+	    <h3>6. The song with the fatal meaning</h3>
+	    <p>The one before last song in each album has a fatal theme - in melody,
+	      lyrics, title or all three.</p>
+	    <h3>7. The locating title</h3>
+	    <p>The long time between albums finds the Mouth and Foot in a different
+	      place each time - geographically and mentally. It&#8217;s important for the group
+	      to note this in the titles of the albums.</p>
+	    <h3>8. The song with the previous album&#8217;s title</h3>
+	    <p>Every album includes a song which has the title of the previous album.</p>
+	    <h3>9. The Spirit of recording</h3>
+	    <p>The basic idea is to maintain a level of maximal freshness, simplicity
+	      and intuitiveness in the recorded tracks.</p>
+	    <h3>10. The record label goes bankrupt</h3>
+	    <p>Possibly the most mysterious and dark rule in the code. History shows
+	      that every record label that releases an album for the Mouth and Foot
+	      goes bankrupt before the release of the next Mouth album.</p>
+	    <h3>11. Exposure figures double</h3>
+	    <p>Sales figures show that Mouth sales double with the release of every album.</p>
+	    <h3>12. The short song</h3>
+	    <p>Each album includes a short song that contains one verse that is sang,
+	      followed by a longer instrumental part. The short song has no chorus or
+	      C part.</p>
+	    <h3>13. The secret message</h3>
+	    <p>Inside the patriotic cover version, a hidden message is sent from the
+	      Mouth and Foot to a known person in Israeli public life.</p>
+	    <h3>14. The song that directs allegations towards a member of the beautiful gender in second person</h3>
+	    <p>In each album there will be a song that is aimed directly at an imagined
+	      representative of the other gender, with a list if allegations.</p>
+	    <h3>15. The disease outbreak</h3>
+	    <p>Every Mouth Year (a year when a Mouth and Foot album is released), there
+	      is an outbreak of the Mouth and Foot disease somewhere in the world.</p>
+	  </div>
 
-	<div lang="fr" class="content-group">
-	  <h2>Le Code</h2>
-	  <p>Il s'agit d'un ensemble de règles que le collectif s’est engagé à respecter religieusement dès le début. Le
-	    groupe a pris sur lui de sortir un album tous les six ans jusqu'à ce que ses membres atteignent l'âge de
-	    quatre-vingts ans. Pour respecter un engagement aussi important, il faut de la discipline. Et pour maintenir
-	    la discipline, il faut des règles.</p>
-	  <h3>1. Un album tous les six ans.</h3>
-	  <p>La règle de fer. L'obligation de s'y conformer est plus importante que toute autre clause. Jusqu’ici, la
-	    règle n'a pas été enfreinte.</p>
-	  <h3>2. Une seule pochette d’album</h3>
-	  <p>Tous les albums du collectif ont la même pochette d’album, qui comprend l'image principale (sur la
-	    couverture) et l'image secondaire (à l'intérieur du livret). Afin que les albums puissent être distingués
-	    les uns des autres, c’est la couleur qui change.</p>
-	  <h3>3. Le Casio est roi</h3>
-	  <p>Le principal instrument de musique est le synthé Casio.</p>
-	  <h3>4. La reprise d’une chanson patriotique</h3>
-	  <p>Le dernier morceau de chaque album est une version improvisée d’une chanson patriotique israélienne.
-	    La reprise est enregistrée dans une seule prise.</p>
-	  <h3>5. Invitation ouverte</h3>
-	  <p>Dans chaque album, des amis ou des artistes alliés sont invités à participer à une ou deux sessions. Cela
-	    afin de ne pas perdre contact avec le monde extérieur.</p>
-	  <h3>6. La rupture</h3>
-	  <p>L'avant-dernière chanson de chaque album doit avoir un thème autour de la rupture — dans la mélodie, les
-	    paroles, le titre ou en sa totalité.</p>
-	  <h3>7. Le titre descriptif</h3>
-	  <p>Le temps long qui s'écoule entre les albums fait que les membres du collectif peuvent se retrouver dans des
-	    endroits fort différents — géographiquement et mentalement. Il est important que cela soit souligné dans le
-	    titre des albums.</p>
-	  <h3>8. La chanson thème de l'album précédent</h3>
-	  <p>Chaque album inclut une chanson qui porte le titre de l’album précédent.</p>
-	  <h3>9. L'esprit de l'enregistrement</h3>
-	  <p>L'idée de base est de maintenir un niveau maximum de fraîcheur et de simplicité dans les enregistrements.</p>
-	  <h3>10. La maison de disques</h3>
-	  <p>Sans doute la clause la plus mystérieuse et la plus sombre du code. L'histoire montre que chaque maison de
-	    disques qui sort un album du collectif fait faillite peu après, en tout cas dans l’intervalle entre deux
-	    albums successifs.</p>
-	  <h3>11. Multiplication de l’audience</h3>
-	  <p>Avec chaque nouvelle sortie, l’audience du collectif double. Les statistiques ne mentent pas, cela se lit
-	    dans le graphe des ventes et de l’exposition médiatique.</p>
-	  <h3>12. La chanson courte</h3>
-	  <p>Chaque album contient une courte chanson qui comprend un couplet chanté et une suite instrumentale plus
-	    longue. Le morceau n'a ni chœur ni refrain ni autre couplet. Pour autant, il n’est pas nécessairement le
-	    morceau le plus court de l'album.</p>
-	  <h3>13. Le message caché</h3>
-	  <p>Lors de la reprise patriotique, un message caché est destiné à une personnalité de la vie publique
-	    israélienne ayant un lien avec la chanson, l’album ou l’époque. Ce lien, ainsi que le message et son
-	    destinataire, resteront secrets. À ce jour, le mystère reste entier.</p>
-	  <h3>14. Le beau sexe à la deuxième personne</h3>
-	  <p>Dans chaque album, il y a une chanson qui s'adresse au singulier à un représentant imaginaire du sexe opposé
-	    à travers une série de plaintes.</p>
-	  <h3>15. L'épidémie</h3>
-	  <p>Pendant les années de parution, une épidémie de fièvre
-	    aphteuse survient quelque part dans le monde.</p>
-	</div>
+	  <div lang="fr" class="content-group">
+	    <h2>Le Code</h2>
+	    <p>Il s'agit d'un ensemble de règles que le collectif s’est engagé à respecter religieusement dès le début. Le
+	      groupe a pris sur lui de sortir un album tous les six ans jusqu'à ce que ses membres atteignent l'âge de
+	      quatre-vingts ans. Pour respecter un engagement aussi important, il faut de la discipline. Et pour maintenir
+	      la discipline, il faut des règles.</p>
+	    <h3>1. Un album tous les six ans.</h3>
+	    <p>La règle de fer. L'obligation de s'y conformer est plus importante que toute autre clause. Jusqu’ici, la
+	      règle n'a pas été enfreinte.</p>
+	    <h3>2. Une seule pochette d’album</h3>
+	    <p>Tous les albums du collectif ont la même pochette d’album, qui comprend l'image principale (sur la
+	      couverture) et l'image secondaire (à l'intérieur du livret). Afin que les albums puissent être distingués
+	      les uns des autres, c’est la couleur qui change.</p>
+	    <h3>3. Le Casio est roi</h3>
+	    <p>Le principal instrument de musique est le synthé Casio.</p>
+	    <h3>4. La reprise d’une chanson patriotique</h3>
+	    <p>Le dernier morceau de chaque album est une version improvisée d’une chanson patriotique israélienne.
+	      La reprise est enregistrée dans une seule prise.</p>
+	    <h3>5. Invitation ouverte</h3>
+	    <p>Dans chaque album, des amis ou des artistes alliés sont invités à participer à une ou deux sessions. Cela
+	      afin de ne pas perdre contact avec le monde extérieur.</p>
+	    <h3>6. La rupture</h3>
+	    <p>L'avant-dernière chanson de chaque album doit avoir un thème autour de la rupture — dans la mélodie, les
+	      paroles, le titre ou en sa totalité.</p>
+	    <h3>7. Le titre descriptif</h3>
+	    <p>Le temps long qui s'écoule entre les albums fait que les membres du collectif peuvent se retrouver dans des
+	      endroits fort différents — géographiquement et mentalement. Il est important que cela soit souligné dans le
+	      titre des albums.</p>
+	    <h3>8. La chanson thème de l'album précédent</h3>
+	    <p>Chaque album inclut une chanson qui porte le titre de l’album précédent.</p>
+	    <h3>9. L'esprit de l'enregistrement</h3>
+	    <p>L'idée de base est de maintenir un niveau maximum de fraîcheur et de simplicité dans les enregistrements.</p>
+	    <h3>10. La maison de disques</h3>
+	    <p>Sans doute la clause la plus mystérieuse et la plus sombre du code. L'histoire montre que chaque maison de
+	      disques qui sort un album du collectif fait faillite peu après, en tout cas dans l’intervalle entre deux
+	      albums successifs.</p>
+	    <h3>11. Multiplication de l’audience</h3>
+	    <p>Avec chaque nouvelle sortie, l’audience du collectif double. Les statistiques ne mentent pas, cela se lit
+	      dans le graphe des ventes et de l’exposition médiatique.</p>
+	    <h3>12. La chanson courte</h3>
+	    <p>Chaque album contient une courte chanson qui comprend un couplet chanté et une suite instrumentale plus
+	      longue. Le morceau n'a ni chœur ni refrain ni autre couplet. Pour autant, il n’est pas nécessairement le
+	      morceau le plus court de l'album.</p>
+	    <h3>13. Le message caché</h3>
+	    <p>Lors de la reprise patriotique, un message caché est destiné à une personnalité de la vie publique
+	      israélienne ayant un lien avec la chanson, l’album ou l’époque. Ce lien, ainsi que le message et son
+	      destinataire, resteront secrets. À ce jour, le mystère reste entier.</p>
+	    <h3>14. Le beau sexe à la deuxième personne</h3>
+	    <p>Dans chaque album, il y a une chanson qui s'adresse au singulier à un représentant imaginaire du sexe opposé
+	      à travers une série de plaintes.</p>
+	    <h3>15. L'épidémie</h3>
+	    <p>Pendant les années de parution, une épidémie de fièvre
+	      aphteuse survient quelque part dans le monde.</p>
+	  </div>
 
-	<div lang="de" class="content-group">
-	  <h2>Maul und Klauen - der Code</h2>
+	  <div lang="de" class="content-group">
+	    <h2>Maul und Klauen - der Code</h2>
 
-	  <p>Der “Code des Mauls” ist eine Sammlung von Regeln, auf die sich The Mouth and Foot („Maul und Klauen“) von
-	    Beginn an verpflichtet hat. Die schiere Existenz dieser Regeln und deren Einhaltung sind essentiell für die
-	    Band, die beschlossen hat, alle sechs Jahre ein Album zu veröffentlichen, bis die Mitglieder das 81.
-	    Lebensjahr erreicht haben. Es bedarf einiger Disziplin, um eine derart strenge Verpflichtung einzuhalten.
-	    Und ohne Regeln keine Disziplin.</p>
+	    <p>Der “Code des Mauls” ist eine Sammlung von Regeln, auf die sich The Mouth and Foot („Maul und Klauen“) von
+	      Beginn an verpflichtet hat. Die schiere Existenz dieser Regeln und deren Einhaltung sind essentiell für die
+	      Band, die beschlossen hat, alle sechs Jahre ein Album zu veröffentlichen, bis die Mitglieder das 81.
+	      Lebensjahr erreicht haben. Es bedarf einiger Disziplin, um eine derart strenge Verpflichtung einzuhalten.
+	      Und ohne Regeln keine Disziplin.</p>
 
-	  <p>Auch wenn das Regelwerk auf den ersten Blick ein wenig rigide wirkt:
-	    uns ist wichtig, dass der “Code des Mauls” ein lebendiges und
-	    dynamisches Gebilde ist, das die Kreativität der Band befördert und unterstützt. Viele Regeln gab es von
-	    Beginn an, manche haben sich erst mit der Zeit ergeben, bzw. wurden erst mit der Zeit entdeckt. Im Folgenden
-	    sind die wichtigsten Regeln des „Codes des Mauls“ aufgelistet.</p>
+	    <p>Auch wenn das Regelwerk auf den ersten Blick ein wenig rigide wirkt:
+	      uns ist wichtig, dass der “Code des Mauls” ein lebendiges und
+	      dynamisches Gebilde ist, das die Kreativität der Band befördert und unterstützt. Viele Regeln gab es von
+	      Beginn an, manche haben sich erst mit der Zeit ergeben, bzw. wurden erst mit der Zeit entdeckt. Im Folgenden
+	      sind die wichtigsten Regeln des „Codes des Mauls“ aufgelistet.</p>
 
-	  <h3>1. Ein Album alle sechs Jahre</h3>
-	  <p>Die wichtigste Regel von allen. Sie einzuhalten ist wichtiger als alles
-	    andere für Mouth and Foot. „Wenn wir daran scheitern, verlieren wir
-	    unsere Würde, unsere Glaubwürdigkeit, unsere Existenzberechtigung“,
-	    sagte einmal ein Mitglied in einem Zustand emotionaler Aufgewühltheit.
-	    Glücklicherweise wurde diese Regel noch nie verletzt.</p>
+	    <h3>1. Ein Album alle sechs Jahre</h3>
+	    <p>Die wichtigste Regel von allen. Sie einzuhalten ist wichtiger als alles
+	      andere für Mouth and Foot. „Wenn wir daran scheitern, verlieren wir
+	      unsere Würde, unsere Glaubwürdigkeit, unsere Existenzberechtigung“,
+	      sagte einmal ein Mitglied in einem Zustand emotionaler Aufgewühltheit.
+	      Glücklicherweise wurde diese Regel noch nie verletzt.</p>
 
-	  <h3>2. Ein Cover – viele Farben</h3>
-	  <p>Alle Mouth and Foot- Alben haben das gleiche Cover, mit dem Haupt-
-	    Mouth and Foot-Bild (vorne), und dem Neben-Mouth and Foot-Bild (im
-	    Booklet). Um die Alben unterscheiden zu können, wurde das Farbensystem
-	    entwickelt. Jedes Album hat eine bestimmte Farbe, die bei einem
-	    besonderen Treffen ermittelt wird. Die Methode dieser Ermittlung wird
-	    nicht verraten (die Farben der Alben bisher sind gelb, pink, silber und
-	    grün.)</p>
+	    <h3>2. Ein Cover – viele Farben</h3>
+	    <p>Alle Mouth and Foot- Alben haben das gleiche Cover, mit dem Haupt-
+	      Mouth and Foot-Bild (vorne), und dem Neben-Mouth and Foot-Bild (im
+	      Booklet). Um die Alben unterscheiden zu können, wurde das Farbensystem
+	      entwickelt. Jedes Album hat eine bestimmte Farbe, die bei einem
+	      besonderen Treffen ermittelt wird. Die Methode dieser Ermittlung wird
+	      nicht verraten (die Farben der Alben bisher sind gelb, pink, silber und
+	      grün.)</p>
 
-	  <h3>3. Casio is king</h3>
-	  <p>Das zentrale Musikinstrument von Mouth and Foot ist die Casio-Orgel.
-	    Verschiedene Casio-Orgel-Modelle leisteten der Band von Anfang an gute
-	    Dienste. Die automatische Begleitfunktion dieser Orgeln ist das
-	    Grundgerüst, aus dem heraus die meisten Songs der Band entstehen. Mouth
-	    and Foot hofft, die herzliche Beziehung zwischen der Band und dem
-	    japanischen Unternehmen weiterhin aufrecht erhalten, ja, stärken zu können.</p>
+	    <h3>3. Casio is king</h3>
+	    <p>Das zentrale Musikinstrument von Mouth and Foot ist die Casio-Orgel.
+	      Verschiedene Casio-Orgel-Modelle leisteten der Band von Anfang an gute
+	      Dienste. Die automatische Begleitfunktion dieser Orgeln ist das
+	      Grundgerüst, aus dem heraus die meisten Songs der Band entstehen. Mouth
+	      and Foot hofft, die herzliche Beziehung zwischen der Band und dem
+	      japanischen Unternehmen weiterhin aufrecht erhalten, ja, stärken zu können.</p>
 
-	  <h3>4. Die patriotische Coverversion</h3>
-	  <p>Der letzte Song eines jeden Albums ist eine improvisierte Version eines
-	    bekannten israelischen Liedes. Welches Lied gecovert wird, entscheidet
-	    die Band frühzeitig in der Vorbereitungsphase des Albums (zweites oder
-	    drittes Jahr). Dies erlaubt den Bandmitgliedern, drei bis vier Jahre
-	    lang das Lied in seiner Originalfassung zu studieren und sein
-	    verborgenes Potential zu erkennen – jedoch noch ohne, dass daraus
-	    irgendetwas wird – das ist in diesem Stadium streng verboten. Dieser
-	    allmähliche Aufbau von kreativer Energie, die nur darauf wartet zu
-	    explodieren, findet erst im Studio seinen Abschluss, wo der Song in in
-	    einem einzigen Take, ohne vorherige Proben, aufgenommen wird (bisherige
-	    Coverversionen sind "Ammunition Hill", "Here Comes the peace", "Got to
-	    Continue Playing" und "One Heart").</p>
+	    <h3>4. Die patriotische Coverversion</h3>
+	    <p>Der letzte Song eines jeden Albums ist eine improvisierte Version eines
+	      bekannten israelischen Liedes. Welches Lied gecovert wird, entscheidet
+	      die Band frühzeitig in der Vorbereitungsphase des Albums (zweites oder
+	      drittes Jahr). Dies erlaubt den Bandmitgliedern, drei bis vier Jahre
+	      lang das Lied in seiner Originalfassung zu studieren und sein
+	      verborgenes Potential zu erkennen – jedoch noch ohne, dass daraus
+	      irgendetwas wird – das ist in diesem Stadium streng verboten. Dieser
+	      allmähliche Aufbau von kreativer Energie, die nur darauf wartet zu
+	      explodieren, findet erst im Studio seinen Abschluss, wo der Song in in
+	      einem einzigen Take, ohne vorherige Proben, aufgenommen wird (bisherige
+	      Coverversionen sind "Ammunition Hill", "Here Comes the peace", "Got to
+	      Continue Playing" und "One Heart").</p>
 
-	  <h3>5. Die offene Einladung</h3>
-	  <p>Zu jeden Album wird eine offene Einladung an Freunde und Künstler, die
-	    von Mouth and Foot sehr geschätzt werden, verschickt – eine Einladung,
-	    an ein oder zwei Songs mitzuwirken. Das dient dazu, den Kontakt zur
-	    Außenwelt nicht zu verlieren (beim ersten Album hat eine Militäreinheit
-	    an "David Ashkenazi" mitgewirkt, das von zwei der Soldaten geschrieben
-	    wurde; beim zweiten steuerte David Krosney einen Text bei und von der
-	    hochgeschätzten Band Heda Boshes wurde das Lied "Completion Song"
-	    gecovert; beim dritten steuerte Etgar Keret einen Text bei und ein
-	    weiterer wurde von Alexander Pushkin (RIP) übersetzt; für das vierte
-	    Album schrieb Hila Gavron einen Text, und der Cookies Choir wirkte bei
-	    „Herusalema“, im Original von den Saddle Nomands, mit).</p>
+	    <h3>5. Die offene Einladung</h3>
+	    <p>Zu jeden Album wird eine offene Einladung an Freunde und Künstler, die
+	      von Mouth and Foot sehr geschätzt werden, verschickt – eine Einladung,
+	      an ein oder zwei Songs mitzuwirken. Das dient dazu, den Kontakt zur
+	      Außenwelt nicht zu verlieren (beim ersten Album hat eine Militäreinheit
+	      an "David Ashkenazi" mitgewirkt, das von zwei der Soldaten geschrieben
+	      wurde; beim zweiten steuerte David Krosney einen Text bei und von der
+	      hochgeschätzten Band Heda Boshes wurde das Lied "Completion Song"
+	      gecovert; beim dritten steuerte Etgar Keret einen Text bei und ein
+	      weiterer wurde von Alexander Pushkin (RIP) übersetzt; für das vierte
+	      Album schrieb Hila Gavron einen Text, und der Cookies Choir wirkte bei
+	      „Herusalema“, im Original von den Saddle Nomands, mit).</p>
 
-	  <h3>6. Der Song mit fatalen Bedeutung</h3>
-	  <p>Der vorletzte Song jedes Albums hat ein unheilvolles Thema – in Melodie,
-	    Text, Titel oder in allen dreien. Der Schluss war schon immer ein
-	    wichtiges Element in Mouth and Foot`s Schaffenswerk. Diese Regel
-	    zelebriert diese Neigung (die fatalen Songs bisher sind "Farewell Song",
-	    "Completion Song", "Closing Song" und "Not With Us").</p>
+	    <h3>6. Der Song mit fatalen Bedeutung</h3>
+	    <p>Der vorletzte Song jedes Albums hat ein unheilvolles Thema – in Melodie,
+	      Text, Titel oder in allen dreien. Der Schluss war schon immer ein
+	      wichtiges Element in Mouth and Foot`s Schaffenswerk. Diese Regel
+	      zelebriert diese Neigung (die fatalen Songs bisher sind "Farewell Song",
+	      "Completion Song", "Closing Song" und "Not With Us").</p>
 
-	  <h3>7. Der Lokalisierungs-Titel</h3>
-	  <p>Wegen der langen Dauer zwischen den Alben ist Mouth and Foot jedes Mal
-	    wieder ganz woanders – geographisch und mental. Für die Band ist es sehr
-	    wichtig, dies in den Albumtiteln zum Ausdruck zu bringen. Das erste
-	    Album hieß „Between the Sea and Swamps“. Aus dem gleichnamigen Lied des
-	    zweiten Albums (siehe nächste Regel) wurde ersichtlich, dass es sich um
-	    die besetzten Gebiete handelt. Im zweiten Album fand man Mouth and Foot
-	    im „Space“ wieder. Das dritte brachte die Band wieder zurück in die
-	    Wirklichkeit Jerusalems, eine Stadt, die sie stark beeinflusst hat. Mit
-	    ihrem vierten Album ist Mouth and Foot in dem südafrikanischen Dorf
-	    Kaligaro angekommen.</p>
+	    <h3>7. Der Lokalisierungs-Titel</h3>
+	    <p>Wegen der langen Dauer zwischen den Alben ist Mouth and Foot jedes Mal
+	      wieder ganz woanders – geographisch und mental. Für die Band ist es sehr
+	      wichtig, dies in den Albumtiteln zum Ausdruck zu bringen. Das erste
+	      Album hieß „Between the Sea and Swamps“. Aus dem gleichnamigen Lied des
+	      zweiten Albums (siehe nächste Regel) wurde ersichtlich, dass es sich um
+	      die besetzten Gebiete handelt. Im zweiten Album fand man Mouth and Foot
+	      im „Space“ wieder. Das dritte brachte die Band wieder zurück in die
+	      Wirklichkeit Jerusalems, eine Stadt, die sie stark beeinflusst hat. Mit
+	      ihrem vierten Album ist Mouth and Foot in dem südafrikanischen Dorf
+	      Kaligaro angekommen.</p>
 
-	  <h3>8. Der Song, der so heißt wie das vorangegangene
-	    Album</h3>
-	  <p>Auf jedem Album findet sich ein Song, der den selben Titel wie das
-	    vorangegangene Album trägt (siehe vorherige Regel). Diese Regel ist eine
-	    von denjenigen, die Teile zukünftiger Alben mit potentiellen Inhalten
-	    füllen, noch bevor die sechs Jahre runtergezählt werden.</p>
+	    <h3>8. Der Song, der so heißt wie das vorangegangene
+	      Album</h3>
+	    <p>Auf jedem Album findet sich ein Song, der den selben Titel wie das
+	      vorangegangene Album trägt (siehe vorherige Regel). Diese Regel ist eine
+	      von denjenigen, die Teile zukünftiger Alben mit potentiellen Inhalten
+	      füllen, noch bevor die sechs Jahre runtergezählt werden.</p>
 
-	  <h3>9. Der spirit des Aufnehmens</h3>
-	  <p>Die Grundidee ist, ein Maximum an Frische, Schlichtheit und Intuitivität
-	    in den aufgenommenen Liedern zu bewahren. Die beiden ersten Alben wurden
-	    jeweils innerhalb eines Tages auf einem 4-Spur Aufnahmegerät
-	    aufgezeichnet, dem Homerecording-Instrument längst vergangener Tage.
-	    „Jerusalem“ und „Kaligaro“ wurden in wenigen kurzen Sessions auf einem
-	    Computer aufgenommen. Mouth and Foot probt nicht vor den Aufnahmen. Die
-	    Vorproduktion beinhaltet eine Reihe von Treffen, die sich über die sechs
-	    Jahre zwischen den Alben erstrecken (siehe Regel 1). Die Treffen werden
-	    überall auf der Welt in den Häusern der Bandmitglieder abgehalten, wo
-	    dann auch einige der Lieder geschrieben werden.</p>
+	    <h3>9. Der spirit des Aufnehmens</h3>
+	    <p>Die Grundidee ist, ein Maximum an Frische, Schlichtheit und Intuitivität
+	      in den aufgenommenen Liedern zu bewahren. Die beiden ersten Alben wurden
+	      jeweils innerhalb eines Tages auf einem 4-Spur Aufnahmegerät
+	      aufgezeichnet, dem Homerecording-Instrument längst vergangener Tage.
+	      „Jerusalem“ und „Kaligaro“ wurden in wenigen kurzen Sessions auf einem
+	      Computer aufgenommen. Mouth and Foot probt nicht vor den Aufnahmen. Die
+	      Vorproduktion beinhaltet eine Reihe von Treffen, die sich über die sechs
+	      Jahre zwischen den Alben erstrecken (siehe Regel 1). Die Treffen werden
+	      überall auf der Welt in den Häusern der Bandmitglieder abgehalten, wo
+	      dann auch einige der Lieder geschrieben werden.</p>
 
-	  <h3>10. Die Plattenfirma geht bankrott</h3>
-	  <p>Die wahrscheinlich mysteriöseste und finsterste Regel des Codes. Sie
-	    liegt außerhalb jeglicher Kontrolle der Band und ist schier
-	    unbegreiflich. Die Geschichte zeigt, dass jede Plattenfirma, die ein
-	    Album von Mouth and Foot veröffentlicht hat, innerhalb weniger Jahre,
-	    auf jeden Fall aber vor dem Erscheinen des nächsten Mouth and Foot
-	    Albums, Pleite gemacht hat. Wir glauben, dass diese Regel beweist, dass
-	    nur die Aufopferungswilligen (und sei es unbewusste
-	    Aufopferungswilligkeit) es verdienen, ein Mouth-Album zu veröffentlichen.</p>
+	    <h3>10. Die Plattenfirma geht bankrott</h3>
+	    <p>Die wahrscheinlich mysteriöseste und finsterste Regel des Codes. Sie
+	      liegt außerhalb jeglicher Kontrolle der Band und ist schier
+	      unbegreiflich. Die Geschichte zeigt, dass jede Plattenfirma, die ein
+	      Album von Mouth and Foot veröffentlicht hat, innerhalb weniger Jahre,
+	      auf jeden Fall aber vor dem Erscheinen des nächsten Mouth and Foot
+	      Albums, Pleite gemacht hat. Wir glauben, dass diese Regel beweist, dass
+	      nur die Aufopferungswilligen (und sei es unbewusste
+	      Aufopferungswilligkeit) es verdienen, ein Mouth-Album zu veröffentlichen.</p>
 
-	  <h3>11. Verdopplung der Verkaufszahlen</h3>
-	  <p>Die Verkaufszahlen zeigen, dass sich die Verkäufe mit jeder
-	    Albumveröffentlichung verdoppeln.</p>
+	    <h3>11. Verdopplung der Verkaufszahlen</h3>
+	    <p>Die Verkaufszahlen zeigen, dass sich die Verkäufe mit jeder
+	      Albumveröffentlichung verdoppeln.</p>
 
-	  <h3>12. Der kurze Song</h3>
-	  <p>Jedes Album enthält einen kurzen Song, der einen einzigen gesungenen
-	    Vers beinhaltet, gefolgt von einem längeren Instrumentalteil. Der kurze
-	    Song hat weder einen Refrain, noch einen C-Part. Kurze Songs bisher: "In
-	    the Jungle of Bangkok", "Gun in Hand", "Mangal Moni", und "Offhandedly".
-	    Es sei darauf hingewiesen, dass “Der kurze Song“ nicht notwendigerweise
-	    der kürzeste Song des Albums sein muss.</p>
+	    <h3>12. Der kurze Song</h3>
+	    <p>Jedes Album enthält einen kurzen Song, der einen einzigen gesungenen
+	      Vers beinhaltet, gefolgt von einem längeren Instrumentalteil. Der kurze
+	      Song hat weder einen Refrain, noch einen C-Part. Kurze Songs bisher: "In
+	      the Jungle of Bangkok", "Gun in Hand", "Mangal Moni", und "Offhandedly".
+	      Es sei darauf hingewiesen, dass “Der kurze Song“ nicht notwendigerweise
+	      der kürzeste Song des Albums sein muss.</p>
 
-	  <h3>13. Die geheime Botschaft</h3>
-	  <p>In der patriotischen Coverversion (siehe Regel 4) übermittelt Mouth and
-	    Foot eine geheime Botschaft an eine bekannte Person aus dem öffentlichen
-	    Leben Israels, die eine Verbindung zu dem Song, dem Album oder dem
-	    Zeitgeist hat. Die Botschaften und die Personen, an die sich diese
-	    richten, bleiben selbstverständlich geheim.</p>
+	    <h3>13. Die geheime Botschaft</h3>
+	    <p>In der patriotischen Coverversion (siehe Regel 4) übermittelt Mouth and
+	      Foot eine geheime Botschaft an eine bekannte Person aus dem öffentlichen
+	      Leben Israels, die eine Verbindung zu dem Song, dem Album oder dem
+	      Zeitgeist hat. Die Botschaften und die Personen, an die sich diese
+	      richten, bleiben selbstverständlich geheim.</p>
 
-	  <h3>14. Der Song, der in der zweiten
-	    Person Singular einen Vorwurf an ein Mitglied des schönen Geschlechts richtet.</h3>
-	  <p>Auf jedem Album wird es einen Song geben, der auf einen imaginären
-	    Repräsentanten des anderen Geschlechts zielt, mit einer Reihe von
-	    Vorwürfen. ("You want me in the Garbage", "Unplanned Child II", "Little
-	    Smile", "Don't tell me Tomorrow").</p>
-	  <p>Schlussendlich müssen wir auch noch eine ungeschriebene Regel erwähnen.
-	    Diese Regel kann nicht niedergeschrieben werden, da es außerhalb unserer
-	    Kontrolle liegt sicherzustellen, dass sie jedes Mal eingehalten wird,
-	    aber bis jetzt war es immer so:</p>
+	    <h3>14. Der Song, der in der zweiten
+	      Person Singular einen Vorwurf an ein Mitglied des schönen Geschlechts richtet.</h3>
+	    <p>Auf jedem Album wird es einen Song geben, der auf einen imaginären
+	      Repräsentanten des anderen Geschlechts zielt, mit einer Reihe von
+	      Vorwürfen. ("You want me in the Garbage", "Unplanned Child II", "Little
+	      Smile", "Don't tell me Tomorrow").</p>
+	    <p>Schlussendlich müssen wir auch noch eine ungeschriebene Regel erwähnen.
+	      Diese Regel kann nicht niedergeschrieben werden, da es außerhalb unserer
+	      Kontrolle liegt sicherzustellen, dass sie jedes Mal eingehalten wird,
+	      aber bis jetzt war es immer so:</p>
 
-	  <h3>15. Ausbruch der Maul-und-Klauenseuche</h3>
-	  <p>Jedes “Mouth-Jahr” (ein Jahr, in dem Mouth and Foot ein Album
-	    veröffentlicht), bricht irgendwo auf der Welt die Maul- und Klauenseuche
-	    aus. Dies traf für die Jahre 1989, 1995, 2001 und 2007 zu. Wie gesagt,
-	    wir können nicht garantieren, dass sich dieses Phänomen auch in Zukunft
-	    fortsetzt.</p>
-	</div>
+	    <h3>15. Ausbruch der Maul-und-Klauenseuche</h3>
+	    <p>Jedes “Mouth-Jahr” (ein Jahr, in dem Mouth and Foot ein Album
+	      veröffentlicht), bricht irgendwo auf der Welt die Maul- und Klauenseuche
+	      aus. Dies traf für die Jahre 1989, 1995, 2001 und 2007 zu. Wie gesagt,
+	      wir können nicht garantieren, dass sich dieses Phänomen auch in Zukunft
+	      fortsetzt.</p>
+	  </div>
 
-	<div lang="he" class="content-group">
-	  <h2>הקוד של הפה</h2>
+	  <div lang="he" class="content-group">
+	    <h2>הקוד של הפה</h2>
 
-	  <p>הוא מערכת כללים שהפה והטלפיים התחייבו עוד בראשית דרכם למלא באדיקות.
-	    ההרכב לקח על עצמו להוציא אלבום בכל שש שנים עד הגיעם של חבריו לגיל
-	    שמונים. כדי לעמוד בהתחייבות נכבדת כזו נחוצה משמעת. וכדי לקיים משמעת,
-	    דרושים כללים.</p>
-	  <h3>1. אלבום כל שש שנים</h3>
-	  <p>כלל הברזל החזק מכולם. המחויבות לעמוד בו חשובה יותר מכל אספקט אחר בהוויה
-	    של הפה והטלפיים. הכלל לא הופר מעולם.</p>
-	  <h3>2. עטיפה אחת - הרבה צבעים</h3>
-	  <p>לכל אלבומי הפה עטיפה זהה, הכוללת את התמונה המרכזית של הפה (על השער) ואת
-	    התמונה המשנית של הפה (בתוך החוברת). כדי שניתן יהיה להבחין בין האלבומים,
-	    לכל אלבום צבע ייחודי.</p>
-	  <h3>3. אין על קסיו</h3>
-	  <p>כלי הנגינה המרכזי של הפה והטלפיים הוא אורגן הקסיו.</p>
-	  <h3>4. גרסת הכיסוי הפטריוטית</h3>
-	  <p>הרצועה האחרונה בכל אלבום של הפה היא גרסה מאולתרת של שיר ישראלי פטריוטי.</p>
-	  <h3>5. ההזמנה הפתוחה</h3>
-	  <p>בכל אלבום נשלחת הזמנה פתוחה לחברים או אמנים המקובלים על הפה, ליטול חלק
-	    בקטע או שניים. הדבר נעשה על מנת שלא לאבד קשר עם העולם החיצון.</p>
-	  <h3>6. השיר בעל המשמעות הסופנית</h3>
-	  <p>לשיר הלפני אחרון בכל אלבום צריכה להיות תימה סופנית – במלודיה, במילים,
-	    בכותרת או בכולם.</p>
-	  <h3>7. כותרת ממקמת</h3>
-	  <p>הזמן הרב שעובר בין אלבום לאלבום, מוצא את הפה והטלפיים בכל פעם במקום אחר
-	    – גיאוגרפית ומנטלית. להרכב חשוב לציין זאת בכותרות האלבומים.</p>
-	  <h3>8. שיר הנושא של האלבום הקודם</h3>
-	  <p>בכל אלבום מופיע שיר ששמו כשם האלבום שקדם לו.</p>
-	  <h3>9. רוח ההקלטה</h3>
-	  <p>הרעיון הבסיסי הוא שמירה על רמת טריות, פשטות ואינטואיטיביות מקסימליים
-	    בערוצים המוקלטים.</p>
-	  <h3>10. חברת התקליטים פושטת את הרגל</h3>
-	  <p>אולי הסעיף המסתורי והאפל ביותר בקוד. ההיסטוריה מראה שכל חברת תקליטים
-	    שמוציאה אלבום לפה והטלפיים פושטת רגל תוך שנים ספורות, ובכל מקרה לפני
-	    יציאת האלבום הבא של הפה.</p>
-	  <h3>11. גרף החשיפה מכפיל</h3>
-	  <p>נתונים מראים שגרף החשיפה של אלבומי הפה מכפיל את עצמו בכל אלבום.</p>
-	  <h3>12. השיר הקצר</h3>
-	  <p>בכל אלבום מופיע שיר קצר הכולל בית אחד מושר, והמשך אינסטרומנטלי ארוך
-	    יותר. לשיר הקצר אין פזמון או חלק שלישי. השיר הקצר לא חייב בהכרח להיות
-	    השיר הקצר ביותר באלבום.</p>
-	  <h3>13. המסר הסמוי</h3>
-	  <p>במהלך גרסת הכיסוי הפטריוטית יימסר תמיד מסר סמוי מאת הפה והטלפיים לדמות
-	    מוכרת בחיים הציבוריים של ישראל, בעלת רלוונטיות לשיר, לאלבום או לתקופה.</p>
-	  <h3>14. השיר המפנה טענות אל בת המין היפה בגוף שני
-	  </h3>
-	  <p>בכל אלבום מופיע שיר אשר פונה ישירות אל נציגה דמיונית של המין השני בשורה
-	    של טענות.</p>
-	  <h3>15. התפרצות המגפה</h3>
-	  <p>בכל שנת פה יש התפרצות של מגפת הפה והטלפיים איפשהו בעולם.</p>
+	    <p>הוא מערכת כללים שהפה והטלפיים התחייבו עוד בראשית דרכם למלא באדיקות.
+	      ההרכב לקח על עצמו להוציא אלבום בכל שש שנים עד הגיעם של חבריו לגיל
+	      שמונים. כדי לעמוד בהתחייבות נכבדת כזו נחוצה משמעת. וכדי לקיים משמעת,
+	      דרושים כללים.</p>
+	    <h3>1. אלבום כל שש שנים</h3>
+	    <p>כלל הברזל החזק מכולם. המחויבות לעמוד בו חשובה יותר מכל אספקט אחר בהוויה
+	      של הפה והטלפיים. הכלל לא הופר מעולם.</p>
+	    <h3>2. עטיפה אחת - הרבה צבעים</h3>
+	    <p>לכל אלבומי הפה עטיפה זהה, הכוללת את התמונה המרכזית של הפה (על השער) ואת
+	      התמונה המשנית של הפה (בתוך החוברת). כדי שניתן יהיה להבחין בין האלבומים,
+	      לכל אלבום צבע ייחודי.</p>
+	    <h3>3. אין על קסיו</h3>
+	    <p>כלי הנגינה המרכזי של הפה והטלפיים הוא אורגן הקסיו.</p>
+	    <h3>4. גרסת הכיסוי הפטריוטית</h3>
+	    <p>הרצועה האחרונה בכל אלבום של הפה היא גרסה מאולתרת של שיר ישראלי פטריוטי.</p>
+	    <h3>5. ההזמנה הפתוחה</h3>
+	    <p>בכל אלבום נשלחת הזמנה פתוחה לחברים או אמנים המקובלים על הפה, ליטול חלק
+	      בקטע או שניים. הדבר נעשה על מנת שלא לאבד קשר עם העולם החיצון.</p>
+	    <h3>6. השיר בעל המשמעות הסופנית</h3>
+	    <p>לשיר הלפני אחרון בכל אלבום צריכה להיות תימה סופנית – במלודיה, במילים,
+	      בכותרת או בכולם.</p>
+	    <h3>7. כותרת ממקמת</h3>
+	    <p>הזמן הרב שעובר בין אלבום לאלבום, מוצא את הפה והטלפיים בכל פעם במקום אחר
+	      – גיאוגרפית ומנטלית. להרכב חשוב לציין זאת בכותרות האלבומים.</p>
+	    <h3>8. שיר הנושא של האלבום הקודם</h3>
+	    <p>בכל אלבום מופיע שיר ששמו כשם האלבום שקדם לו.</p>
+	    <h3>9. רוח ההקלטה</h3>
+	    <p>הרעיון הבסיסי הוא שמירה על רמת טריות, פשטות ואינטואיטיביות מקסימליים
+	      בערוצים המוקלטים.</p>
+	    <h3>10. חברת התקליטים פושטת את הרגל</h3>
+	    <p>אולי הסעיף המסתורי והאפל ביותר בקוד. ההיסטוריה מראה שכל חברת תקליטים
+	      שמוציאה אלבום לפה והטלפיים פושטת רגל תוך שנים ספורות, ובכל מקרה לפני
+	      יציאת האלבום הבא של הפה.</p>
+	    <h3>11. גרף החשיפה מכפיל</h3>
+	    <p>נתונים מראים שגרף החשיפה של אלבומי הפה מכפיל את עצמו בכל אלבום.</p>
+	    <h3>12. השיר הקצר</h3>
+	    <p>בכל אלבום מופיע שיר קצר הכולל בית אחד מושר, והמשך אינסטרומנטלי ארוך
+	      יותר. לשיר הקצר אין פזמון או חלק שלישי. השיר הקצר לא חייב בהכרח להיות
+	      השיר הקצר ביותר באלבום.</p>
+	    <h3>13. המסר הסמוי</h3>
+	    <p>במהלך גרסת הכיסוי הפטריוטית יימסר תמיד מסר סמוי מאת הפה והטלפיים לדמות
+	      מוכרת בחיים הציבוריים של ישראל, בעלת רלוונטיות לשיר, לאלבום או לתקופה.</p>
+	    <h3>14. השיר המפנה טענות אל בת המין היפה בגוף שני
+	    </h3>
+	    <p>בכל אלבום מופיע שיר אשר פונה ישירות אל נציגה דמיונית של המין השני בשורה
+	      של טענות.</p>
+	    <h3>15. התפרצות המגפה</h3>
+	    <p>בכל שנת פה יש התפרצות של מגפת הפה והטלפיים איפשהו בעולם.</p>
 
-	</div>
+	  </div>
 
-	<div lang="zh" class="content-group">
-	  <h2>口足乐队法则</h2>
+	  <div lang="zh" class="content-group">
+	    <h2>口足乐队法则</h2>
 
-	  <h3>每六年一张专辑</h3>
-	  <p>这是最重要的规则。保持这一承诺比口足任何的其他规则都更重要。</p>
+	    <h3>每六年一张专辑</h3>
+	    <p>这是最重要的规则。保持这一承诺比口足任何的其他规则都更重要。</p>
 
-	  <h3>一个封面 - 多种色彩</h3>
-	  <p>所有的口足专辑都使用相同的封面，包括口足主题形象（在前面），以及负页的口足形象（在小册子中）。每张专辑都具有自己独特的色彩。</p>
+	    <h3>一个封面 - 多种色彩</h3>
+	    <p>所有的口足专辑都使用相同的封面，包括口足主题形象（在前面），以及负页的口足形象（在小册子中）。每张专辑都具有自己独特的色彩。</p>
 
-	  <h3>卡西欧电子琴是王者</h3>
-	  <p>口足乐队的中心乐器是卡西欧电子琴。这些电子琴的自动伴奏功能是乐队所有歌曲创作的主要构架。</p>
+	    <h3>卡西欧电子琴是王者</h3>
+	    <p>口足乐队的中心乐器是卡西欧电子琴。这些电子琴的自动伴奏功能是乐队所有歌曲创作的主要构架。</p>
 
-	  <h3>爱国封面曲</h3>
-	  <p>每张口足专辑的最后一首歌都是一首即兴演奏的以色列知名爱国歌曲的版本。封面曲以一次录音完成，没有排练。</p>
+	    <h3>爱国封面曲</h3>
+	    <p>每张口足专辑的最后一首歌都是一首即兴演奏的以色列知名爱国歌曲的版本。封面曲以一次录音完成，没有排练。</p>
 
-	  <h3>开放式邀请</h3>
-	  <p>每张专辑漠角都会向乐队钦佩的朋友或艺术家发出开放式邀请，参与一两首歌曲的创作。</p>
+	    <h3>开放式邀请</h3>
+	    <p>每张专辑漠角都会向乐队钦佩的朋友或艺术家发出开放式邀请，参与一两首歌曲的创作。</p>
 
-	  <h3>具有必然意义的歌曲</h3>
-	  <p>每张专辑倒数第二首歌曲都有必然的主题 - 包含在在旋律、歌词、标题或三者皆有。</p>
+	    <h3>具有必然意义的歌曲</h3>
+	    <p>每张专辑倒数第二首歌曲都有必然的主题 - 包含在在旋律、歌词、标题或三者皆有。</p>
 
-	  <h3>地点标志性标题</h3>
-	  <p>专辑之间的长时间间隔会让口足乐队每次都处于不同的地方 - 在地理和精神上。对于乐队来说，在专辑的标题中注明这一点非常重要。</p>
+	    <h3>地点标志性标题</h3>
+	    <p>专辑之间的长时间间隔会让口足乐队每次都处于不同的地方 - 在地理和精神上。对于乐队来说，在专辑的标题中注明这一点非常重要。</p>
 
-	  <h3>带有有上一张专辑标题的歌曲</h3>
-	  <p>每张专辑都有一首歌曲的标题与前一张专辑相同。</p>
+	    <h3>带有有上一张专辑标题的歌曲</h3>
+	    <p>每张专辑都有一首歌曲的标题与前一张专辑相同。</p>
 
-	  <h3>录制的精神</h3>
-	  <p>录制的基本思想是在曲目中保持最大的新鲜度、简单性和直观性。</p>
+	    <h3>录制的精神</h3>
+	    <p>录制的基本思想是在曲目中保持最大的新鲜度、简单性和直观性。</p>
 
-	  <h3>唱片公司破产</h3>
-	  <p>以往历史显示，每个发布口足专辑的唱片公司在下一张口足专辑发布之前都会破产。这可能是口足法则中最神秘和黑暗的规则。</p>
+	    <h3>唱片公司破产</h3>
+	    <p>以往历史显示，每个发布口足专辑的唱片公司在下一张口足专辑发布之前都会破产。这可能是口足法则中最神秘和黑暗的规则。</p>
 
-	  <h3>曝光率翻倍</h3>
-	  <p>销售数据显示，每张新专辑发布时，口足专辑的售额都会翻倍。</p>
+	    <h3>曝光率翻倍</h3>
+	    <p>销售数据显示，每张新专辑发布时，口足专辑的售额都会翻倍。</p>
 
-	  <h3>短歌曲</h3>
-	  <p>每张专辑都包括一首短歌曲，其中包含一节歌词，然后是较长的器乐部分。短歌曲没有副歌或C部分。</p>
+	    <h3>短歌曲</h3>
+	    <p>每张专辑都包括一首短歌曲，其中包含一节歌词，然后是较长的器乐部分。短歌曲没有副歌或C部分。</p>
 
-	  <h3>秘密信息</h3>
-	  <p>在爱国封面曲中，口足乐队会向以色列公众生活中的某个知名人士发送秘密的信i息。</p>
+	    <h3>秘密信息</h3>
+	    <p>在爱国封面曲中，口足乐队会向以色列公众生活中的某个知名人士发送秘密的信i息。</p>
 
-	  <h3>直接指控美艳异性成员的歌曲</h3>
-	  <!-- 第二人称性别 -->
-	  <p>每张专辑中都会有一首直接针对一个想象中的异性代表的歌曲，附带一系列指控。</p>
+	    <h3>直接指控美艳异性成员的歌曲</h3>
+	    <!-- 第二人称性别 -->
+	    <p>每张专辑中都会有一首直接针对一个想象中的异性代表的歌曲，附带一系列指控。</p>
 
-	  <h3>疫病爆发</h3>
-	  <p>每个口足年（即口足专辑发布的年份），世界某地都会爆发手口足疫病。</p>
-	</div>
+	    <h3>疫病爆发</h3>
+	    <p>每个口足年（即口足专辑发布的年份），世界某地都会爆发手口足疫病。</p>
+	  </div>
 
-      </article>
+	</article>
       </div>
     </main>
     <footer id="main-footer">
@@ -480,27 +485,40 @@
       </div>
     </footer>
     <script>
-      // SMART ROUTER & PERSISTENCE
+      // 1. CONFIG: Supported languages and the storage key
       const supported = ['en', 'fr', 'de', 'he', 'zh'];
-      
-      window.addEventListener('DOMContentLoaded', () => {
-	  const saved = localStorage.getItem('app-lang-pref');
-	  const browser = navigator.language.split('-')[0];
+      const STORAGE_KEY = 'mouth-lang-pref';
 
-	  if (!window.location.hash) {
-	      if (saved && supported.includes(saved)) {
-		  window.location.hash = saved;
-	      } else if (supported.includes(browser)) {
-		  window.location.hash = browser;
-	      }
-	  }
+      // 2. INITIALIZATION: Run as soon as the DOM is ready
+      window.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      const browser = navigator.language.split('-')[0];
+
+      // Priority: 1. LocalStorage, 2. Browser Language, 3. Default (English)
+      let targetLang = 'en'; 
+      if (supported.includes(saved)) {
+      targetLang = saved;
+      } else if (supported.includes(browser)) {
+      targetLang = browser;
+      }
+
+      // Explicitly check the correct radio button
+      const input = document.getElementById(`state-${targetLang}`);
+      if (input) {
+      input.checked = true;
+      }
       });
 
-      window.addEventListener('hashchange', () => {
-	  const lang = window.location.hash.replace('#', '');
-	  if (supported.includes(lang)) {
-	      localStorage.setItem('app-lang-pref', lang);
-	  }
+      // 3. AUTO-SAVE: Watch for user interactions
+      // We use event delegation on the document to capture 'change' events
+      document.addEventListener('change', (e) => {
+      if (e.target.name === 'site-language') {
+      const lang = e.target.id.replace('state-', '');
+      localStorage.setItem(STORAGE_KEY, lang);
+      
+      // Optional: Log to console for debugging
+      console.log(`Language state saved: ${lang}`);
+      }
       });
     </script>
   </body>

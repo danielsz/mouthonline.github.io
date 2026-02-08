@@ -1,0 +1,66 @@
+.lang-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 5. TYPOGRAPHY & RTL/CJK SPECIALS */
+h2 { font-size: var(--step-2); margin: 0 0 var(--space-s-l) 0; line-height: 1.1; }
+p { font-size: var(--step-0); line-height: 1.75; margin-bottom: 1.25rem; }
+
+[lang="he"] { direction: rtl; text-align: right; --font-language-aware-bandname: var(--font-bandname-hebrew);}
+[lang="zh"] { line-height: 1.9; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+[lang="de"] { hyphens: auto; } /* Handle long German words */
+
+.lang-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50px;
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  /* Target the buttons (labels) */
+  label {
+    cursor: pointer;
+    text-decoration: none;
+    color: #64748b;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover { 
+      background: #f1f5f9; 
+    }
+
+    /* THE MAGIC: If the body has the radio checked that matches THIS label */
+    /* We use the :has() logic to highlight the button */
+    body:has(#state-en:checked) &[for="state-en"],
+    body:has(#state-he:checked) &[for="state-he"],
+    body:has(#state-fr:checked) &[for="state-fr"],
+    body:has(#state-de:checked) &[for="state-de"],
+    body:has(#state-zh:checked) &[for="state-zh"] {
+      background: var(--primary); /* Your brand color */
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+.content-group {
+  display: none;
+}
+
+/* 2. State-Based Visibility */
+body:has(#state-en:checked) .content-group[lang="en"] { display: block; }
+body:has(#state-he:checked) .content-group[lang="he"] { display: block; }
+body:has(#state-fr:checked) .content-group[lang="fr"] { display: block; }
+body:has(#state-de:checked) .content-group[lang="de"] { display: block; }
+body:has(#state-zh:checked) .content-group[lang="zh"] { display: block; }
