@@ -5,3 +5,8 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
+.summary {
+    border-radius: 24px;
+    padding: var(--space-s-l);
+    background: var(--surface);
+}

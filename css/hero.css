@@ -38,7 +38,7 @@
 	grid-template-rows: 1fr;
     }
     
-    body:has(#he:target) .hero-container {
+    body:has(#state-he:checked) .hero-container {
 	grid-template-areas: "main sidebar";
     }
 }
@@ -56,7 +56,6 @@
 }
 
 .hero-sidebar {
-    background: var(--primary);
     padding: var(--space-m);
     display: flex;
     flex-direction: column;
@@ -66,7 +65,6 @@
 }
 
 .hero-main {
-    background: var(--surface);
     padding: var(--space-m);
     display: grid;
     place-items: center;

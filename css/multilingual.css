@@ -1,4 +1,4 @@
-.lang-nav-container {
+#lang-nav-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,15 +14,12 @@ p { font-size: var(--step-0); line-height: 1.75; margin-bottom: 1.25rem; }
 
 .lang-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 0.5rem;
-  background: white;
+  background: var(--surface);
   padding: 0.5rem;
   border-radius: 50px;
-  position: sticky;
-  top: 1rem;
-  z-index: 100;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 
   /* Target the buttons (labels) */
