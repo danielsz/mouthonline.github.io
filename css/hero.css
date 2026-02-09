@@ -18,7 +18,6 @@
 	"main";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;  /* 50/50 split for full viewport hero */
-    height: 100%;
 }
 
 @container hero (width < 600px) {
@@ -59,16 +58,16 @@
     padding: var(--space-m);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    overflow: auto;
+    justify-content: start;
+    overflow: clip;
     min-height: 0;
 }
 
 .hero-main {
     padding: var(--space-m);
     display: grid;
+    overflow: clip;
     place-items: center;
-    overflow: hidden;
     min-height: 0;
 }
 
