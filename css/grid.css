@@ -9,7 +9,7 @@
     display: grid;
     gap: var(--grid-gutter);
     /* The 12-column grid exists everywhere */
-    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    grid-template-columns: repeat(var(--main-grid-columns), 1fr);
     row-gap: var(--space-l-xl);
     padding-block: var(--space-l-xl);
 }
@@ -23,7 +23,7 @@
     /* This works for BOTH English and Hebrew automatically */
     .summary {
 	/* Line 1 is the 'Start'. In RTL, line 1 is the far right. */
-	grid-column: 1 / span 2;
+	grid-column: 1 / span 4;
 	align-self: start;
 	min-inline-size: var(--space-2xl-3xl);
     }
@@ -31,10 +31,7 @@
     .main-text, .thecode {
 	/* Line 4 is the 'Start' plus an offset. */
 	/* In RTL, this leaves the 'buffer' to the left of the text. */
-	grid-column: 4 / span 7;
+	grid-column: 5 / span 7;
     }
 
-    #lang-nav-container {
-	grid-column: 1 / span 11;
-    }
 }
