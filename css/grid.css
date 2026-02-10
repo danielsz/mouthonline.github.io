@@ -3,6 +3,7 @@
     padding-inline: var(--grid-gutter);
     margin-inline: auto;
     container-type: inline-size;
+    container-name: grid;
 }
 
 .u-grid {
@@ -19,7 +20,7 @@
     grid-column: 1 / -1;
 }
 
-@container (min-width: 60rem) {
+@container grid (min-width: 50rem) {
     /* This works for BOTH English and Hebrew automatically */
     .summary {
 	/* Line 1 is the 'Start'. In RTL, line 1 is the far right. */
@@ -28,10 +29,17 @@
 	min-inline-size: var(--space-2xl-3xl);
     }
 
-    .main-text, .thecode {
+    .thecode {
 	/* Line 4 is the 'Start' plus an offset. */
 	/* In RTL, this leaves the 'buffer' to the left of the text. */
-	grid-column: 5 / span 7;
+	grid-column: 5 / -1;
     }
 
+    #bandcard {
+	grid-column: 1 / span 5;
+    }
+
+    #image-container {
+	grid-column: 6 / -1;
+    }
 }

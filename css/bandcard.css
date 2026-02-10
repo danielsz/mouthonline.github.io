@@ -1,39 +1,37 @@
-.card-5 {
+#bandcard {
     container-type: inline-size;
-    container-name: card5;
+    container-name: bandcard;
 }
 
-.card-5 .card-inner {
+#bandcard .card-inner {
     background: var(--surface);
     padding: 0;
-    position: relative;
-    overflow: hidden;
     border: 1px solid #e5e5e0;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.card-5 .top-bar {
+#bandcard .top-bar {
     height: var(--space-3xs);;
     background: linear-gradient(90deg, #1a1a1a 0%, #4a4a4a 100%);
 }
 
-.card-5 .card-content {
+#bandcard .card-content {
     padding: var(--space-l-xl);
     display: grid;
     gap: var(--space-l);
 }
 
-.card-5 .logo-section {
+#bandcard .logo-section {
     display: grid;
     gap: var(--space-s);
     justify-items: start;
 }
 
-body:has(#he:target) .card-5 .logo-section {
+body:has(#he:target) #bandcard .logo-section {
     justify-items: end;
 }
 
-.card-5 .logo-container {
+#bandcard .logo-container {
     width: 200px;
     height: 152px;
     background: var(--primary);
@@ -44,17 +42,17 @@ body:has(#he:target) .card-5 .logo-section {
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.card-5 .logo-container:hover {
+#bandcard .logo-container:hover {
     transform: scale(1.05);
 }
 
-.card-5 .logo-img {
+#bandcard .logo-img {
     width: 100%;
     height: auto;
     filter: brightness(0) invert(1);
 }
 
-.card-5 .number {
+#bandcard .number {
     font-family: 'Syne', sans-serif;
     font-size: var(--step--2);
     color: #999;
@@ -62,14 +60,14 @@ body:has(#he:target) .card-5 .logo-section {
     font-weight: 600;
 }
 
-.card-5 .text-section {
+#bandcard .text-section {
     display: grid;
     gap: var(--space-s);
 }
 
-.card-5 .band-name {
+#bandcard .band-name {
     font-family: var(--font-language-aware-bandname);
-    font-size: var(--step-3);
+    font-size: var(--space-l-xl);
     font-weight: 900;
     color: #1a1a1a;
     text-transform: uppercase;
@@ -77,14 +75,14 @@ body:has(#he:target) .card-5 .logo-section {
     line-height: 0.9;
 }
 
-.card-5 .meta {
+#bandcard .meta {
     display: grid;
     gap: var(--space-2xs);
     padding-top: var(--space-xs);
     border-top: 1px solid #e5e5e0;
 }
 
-.card-5 .meta-item {
+#bandcard .meta-item {
     font-family: 'Syne', sans-serif;
     font-size: var(--step--1);
     color: #666;
@@ -94,36 +92,19 @@ body:has(#he:target) .card-5 .logo-section {
     gap: var(--space-s);
 }
 
-.card-5 .meta-label {
+#bandcard .meta-label {
     color: #999;
     font-weight: 400;
 }
 
-.card-5 .meta-value {
+#bandcard .meta-value {
     color: #1a1a1a;
     font-weight: 600;
 }
 
-@container card5 (width < 25rem) {
-    .card-5 .logo-section {
+@container bandcard (width < 25rem) {
+    #bandcard .logo-section {
         display: none;
     }
 }
 
-@container card5 (width > 1050px) {
-    .card-5 .card-content {
-        grid-template-columns: clamp(12.5rem, calc(11.48rem + 5.11vw), 15rem) 1fr;
-        gap: var(--space-xl-2xl);
-        align-items: center;
-    }
-
-    .card-5 .band-name {
-        font-size: var(--step-5);
-    }
-}
-
-@container hero (height < 400px) {
-    .hero-container {
-	grid-template-rows: auto auto;
-    }
-}

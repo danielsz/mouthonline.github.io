@@ -30,7 +30,7 @@
     display: block;
     width: 100%; /* Fill the container width */
     height: auto;
-    max-height: min(80vh, 100%);  /* Constrain to parent or 80vh, whichever is smaller */
+    max-height: min(70vh, 100%);  /* Constrain to parent or 80vh, whichever is smaller */
     max-width: 100%;
     object-fit: contain;
     /* This ensures the image has a placeholder space while loading */
