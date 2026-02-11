@@ -11,11 +11,6 @@
     height: 100%;
     max-height: 100%;  /* Constrain to parent */
     padding: var(--space-s-l);
-    box-sizing: border-box;
-    overflow: hidden;
-    border: var(--space-s);
-    border-color: var(--surface);
-    border-style: solid;
     background: var(--surface);
 }
 
@@ -70,7 +65,7 @@
     content: ""; 
 }
 
-#image-container #caption {
+#image-container .caption {
     margin-top: .5em;
 }
 
